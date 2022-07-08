@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="module" src="index.mjs" async></script>
+    <script type="module" src="module.mjs" async></script>
+    <script type="module">
+      console.log("Script tag executed");
+      var my_awesome_script = document.createElement('script');
+
+      my_awesome_script.setAttribute('src','./index.mjs');
+      my_awesome_script.setAttribute('async','');
+
+      document.head.appendChild(my_awesome_script);
+    </script>
+  </head>
+  <body>
+    <h1>Load test!</h1>
+    <p>
+      Lorem ipsum something...
+    </p>
+  </body>
+</html>
